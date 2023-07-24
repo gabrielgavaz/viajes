@@ -1,0 +1,43 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Datos del Viaje",
+					"Image": "sap-icon://shipping-status",
+					"PageToOpen": "/Viajes/Pages/DatosViaje.page",
+					"_Name": "TabItem0"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Datos del Transportista",
+					"Image": "sap-icon://activity-individual",
+					"PageToOpen": "/Viajes/Pages/DatosTransportista.page",
+					"_Name": "TabItem1"
+				}
+			],
+			"Position": "Bottom",
+			"TabStripType": "Normal"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "MenuDetalleViaje",
+	"Caption": "Detalle del Viaje",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://refresh",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Viajes/Rules/Detalle/RefreshDatosTransp.js"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

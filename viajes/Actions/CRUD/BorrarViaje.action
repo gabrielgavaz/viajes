@@ -1,0 +1,13 @@
+{
+	"_Type": "Action.Type.ODataService.DeleteEntity",
+	"ActionResult": {
+		"_Name": "BorrarViaje"
+	},
+	"OnFailure": "/Viajes/Actions/CRUD/ErrorBorrar.action",
+	"OnSuccess": "/Viajes/Actions/CRUD/ExitoBorrar.action",
+	"Target": {
+		"Service": "/Viajes/Services/VIAJES.service",
+		"EntitySet": "ViajeSet",
+		"ReadLink": "{@odata.readLink}"
+	}
+}

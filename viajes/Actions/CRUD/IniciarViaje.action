@@ -1,0 +1,22 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "IniciarViaje"
+	},
+	"OnFailure": "/Viajes/Actions/CRUD/ErrorIniciarViaje.action",
+	"OnSuccess": "/Viajes/Actions/CRUD/ExitoIniciarViaje.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Iniciando Viaje...",
+	"Target": {
+		"Service": "/Viajes/Services/VIAJES.service",
+		"EntitySet": "ViajeSet",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties": {
+		"Estado": "E",
+		"NombreTransp": "#Page:IniciarViaje/#ClientData/#Property:Nombre",
+		"DniTransp": "#Page:IniciarViaje/#Control:InpDni/#Value",
+		"Telefono": "#Page:IniciarViaje/#Control:InpTelefono/#Value",
+		"PatCamion": "#Page:IniciarViaje/#Control:InpPatCamion/#Value"
+	}
+}

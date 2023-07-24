@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ExitoBorrar"
+	},
+	"Message": "Viaje borrado exitosamente",
+	"Title": "Exito!",
+	"OKCaption": "OK"
+}

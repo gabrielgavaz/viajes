@@ -1,0 +1,90 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Footnote": "A: {Destino}",
+						"StatusText": "$(DT,{FechaSalida},'es-419-AR','GMT-3',{format:'short'})",
+						"SubstatusText": "$(DT,{FechaEntrega},'es-419-AR','GMT-3',{format:'short'})",
+						"DetailImage": "sap-icon://shipping-status",
+						"DetailImageIsCircular": false,
+						"Tags": [
+							{
+								"Color": "/Viajes/Rules/Formatters/FormatterEstado.js",
+								"Text": "{EstadoDesc}"
+							}
+						],
+						"BodyText": "De: {Salida}",
+						"HeadlineText": "Nro de Viaje: {NroViaje}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"_Type": "Section.Type.ObjectCollection",
+					"Target": {
+						"Service": "/Viajes/Services/VIAJES.service",
+						"EntitySet": "{@odata.readLink}/InsumosSet"
+					},
+					"_Name": "SectionObjectCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"ObjectCell": {
+						"Title": "{Descripcion}",
+						"Tags": [
+							{
+								"Color": "Blue",
+								"Text": "{Cultivo}"
+							}
+						],
+						"Subhead": "Cantidad: $(N,{Cantidad},'es-419-AR',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true}) KG",
+						"DisplayDescriptionInMobile": true,
+						"AccessoryType": "none",
+						"PreserveIconStackSpacing": false,
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "{Imagen}",
+									"ImageText": ""
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						}
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DatosViaje",
+	"Caption": "DatosViaje",
+	"PrefersLargeCaption": true
+}

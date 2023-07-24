@@ -1,0 +1,111 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/Viajes/Services/VIAJES.service",
+						"EntitySet": "ViajeSet"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No se encontraron viajes con los filtros ingresados",
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "Nro de viaje: {NroViaje}",
+						"Subhead": "Salida: {Salida}",
+						"Footnote": "Destino: {Destino}",
+						"Description": "Transp: {NombreTransp}",
+						"DisplayDescriptionInMobile": true,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "detailButton",
+						"Tags": [
+							{
+								"Color": "/Viajes/Rules/Formatters/FormatterEstado.js",
+								"Text": "{EstadoDesc}"
+							}
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://shipping-status"
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnPress": "/Viajes/Actions/Detalle/NavToDetalle.action",
+						"OnAccessoryButtonPress": "/Viajes/Actions/CRUD/MenuViaje.action",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ListaViajes",
+	"Caption": "ListaViajes",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem2",
+				"Caption": "Item",
+				"Icon": "sap-icon://refresh",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Viajes/Rules/CRUD/RefreshListaViajes.js"
+			},
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Viajes/Actions/CRUD/NavToCrearViaje.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"Icon": "sap-icon://filter",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/Viajes/Actions/CRUD/NavToFiltrosViaje.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

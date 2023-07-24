@@ -1,0 +1,10 @@
+{
+    "Service": "/Viajes/Services/VIAJES.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnSuccess": "/Viajes/Actions/Service/InitializeOnlineSuccessMessage.action",
+    "OnFailure": "/Viajes/Actions/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}

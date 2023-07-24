@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorBorrar"
+	},
+	"Message": "Ocurrió un error al borrar el viaje: {#ActionResults:BorrarViaje/error}"
+}

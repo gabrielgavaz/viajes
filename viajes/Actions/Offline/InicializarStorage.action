@@ -1,0 +1,28 @@
+{
+	"_Type": "Action.Type.OfflineOData.Initialize",
+	"ActionResult": {
+		"_Name": "InicializarStorage"
+	},
+	"OnFailure": "/Viajes/Actions/Offline/ErrorInicializarStorage.action",
+	"OnSuccess": "/Viajes/Actions/Offline/DescargarDatos.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Inicializando offline...",
+	"Service": "/Viajes/Services/VIAJES.service",
+	"DefiningRequests": [
+		{
+			"Name": "LugarSet",
+			"Query": "LugarSet",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "EstadoSet",
+			"Query": "EstadoSet",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "ViajeSet",
+			"Query": "ViajeSet?$expand=InsumosSet",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

@@ -1,0 +1,85 @@
+{
+	"Controls": [
+		{
+			"Header": {
+				"Headline": "Viajes",
+				"SubHeadline": "Gestión de viajes y transportistas",
+				"Icon": "/Viajes/Images/logoHB4.png",
+				"Alignment": "left",
+				"IconIsCircular": false,
+				"DisableIconText": false
+			},
+			"Sections": [
+				{
+					"_Name": "SideDrawerSection0",
+					"Items": [
+						{
+							"Title": "Inicio",
+							"Image": "sap-icon://home",
+							"PageToOpen": "/Viajes/Pages/Inicio.page",
+							"_Name": "SideDrawerSection0Item0",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Viajes",
+							"Image": "sap-icon://shipping-status",
+							"PageToOpen": "/Viajes/Pages/ListaViajes.page",
+							"_Name": "SideDrawerSection0Item1",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Modo Online",
+							"Image": "sap-icon://connected",
+							"OnPress": "/Viajes/Actions/Service/InitializeOnline.action",
+							"_Name": "SideDrawerSection0Item2",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Modo Offline",
+							"Image": "sap-icon://disconnected",
+							"OnPress": "/Viajes/Actions/Offline/InicializarStorage.action",
+							"_Name": "SideDrawerSection0Item3",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Sincronizar Cambios",
+							"Image": "sap-icon://synchronize",
+							"OnPress": "/Viajes/Actions/Offline/SubirCambios.action",
+							"_Name": "SideDrawerSection0Item4",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						},
+						{
+							"Title": "Salir",
+							"Image": "sap-icon://visits",
+							"OnPress": "/Viajes/Actions/LogoutMessage.action",
+							"_Name": "SideDrawerSection0Item5",
+							"Visible": true,
+							"TextAlignment": "left",
+							"Styles": {}
+						}
+					],
+					"Visible": true,
+					"PreserveImageSpacing": true,
+					"SeparatorEnabled": true
+				}
+			],
+			"_Type": "Control.Type.SideDrawer",
+			"_Name": "SideDrawer0",
+			"AlwaysShowDrawerButton": false,
+			"ClearHistory": false
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Main"
+}

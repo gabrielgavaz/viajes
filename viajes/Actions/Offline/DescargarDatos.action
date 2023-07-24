@@ -1,0 +1,28 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "DescargarDatos"
+	},
+	"OnFailure": "/Viajes/Actions/Offline/ErrorDescargarDatos.action",
+	"OnSuccess": "/Viajes/Actions/Offline/ExitoInicializarOffline.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Descargando datos...",
+	"Service": "/Viajes/Services/VIAJES.service",
+	"DefiningRequests": [
+		{
+			"Name": "ViajeSet",
+			"Query": "ViajeSet?$expand=InsumosSet",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "EstadoSet",
+			"Query": "EstadoSet",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "LugarSet",
+			"Query": "LugarSet",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorValidarIngresos"
+	},
+	"Message": "Debe ingresar el lugar de Salida y de Destino de forma obligatoria"
+}

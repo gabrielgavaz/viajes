@@ -1,0 +1,143 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ProfileHeader",
+					"_Name": "SectionProfileHeader0",
+					"Visible": true,
+					"ProfileHeader": {
+						"DetailImage": "sap-icon://customer",
+						"DetailImageIsCircular": true,
+						"Headline": "{NombreTransp}",
+						"Subheadline": "DNI: {DniTransp}",
+						"Description": "",
+						"ActivityItems": [
+							{
+								"_Name": "SectionProfileHeader0ActivityItems0",
+								"ActivityType": "Phone",
+								"ActivityValue": "{Telefono}"
+							}
+						]
+					}
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true
+					},
+					"KeyAndValues": [
+						{
+							"Value": "{Telefono}",
+							"_Name": "KeyValue0",
+							"KeyName": "Teléfono",
+							"Visible": true
+						},
+						{
+							"Value": "{PatCamion}",
+							"_Name": "KeyValue1",
+							"KeyName": "Patente Camión",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true
+					},
+					"KeyAndValues": [
+						{
+							"Value": "#Page:DatosTransportista/#ClientData/#Property:Latitud",
+							"_Name": "KeyValue2",
+							"KeyName": "Latitud",
+							"Visible": true
+						},
+						{
+							"Value": "#Page:DatosTransportista/#ClientData/#Property:Longitud",
+							"_Name": "KeyValue3",
+							"KeyName": "Longitud",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue1",
+					"Header": {
+						"_Name": "SectionHeader0",
+						"AccessoryType": "none",
+						"UseTopPadding": true,
+						"Caption": "Caption",
+						"Items": [
+							{
+								"_Type": "SectionHeaderItem.Type.Label",
+								"_Name": "SectionHeaderItemTypeLabel0",
+								"Visible": true,
+								"Position": "Left",
+								"Title": "Ubicación Geográfica"
+							},
+							{
+								"_Type": "SectionHeaderItem.Type.Icon",
+								"_Name": "SectionHeaderItemTypeIcon0",
+								"Visible": true,
+								"Position": "Right",
+								"Icon": "sap-icon://functional-location"
+							}
+						]
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DatosTransportista",
+	"Caption": "DatosTransportista",
+	"PrefersLargeCaption": true,
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "Geolocalizar",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Style": "",
+				"OnPress": "/Viajes/Rules/Detalle/ObtenerGeolocalizacion.js"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem1",
+				"Caption": "Chequear conexión",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Style": "",
+				"OnPress": "/Viajes/Rules/ChequearConexion.js"
+			}
+		]
+	}
+}

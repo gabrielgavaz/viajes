@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ExitoIniciarViaje"
+	},
+	"Message": "Viaje iniciado exitosamente",
+	"Title": "Exito!",
+	"OKCaption": "OK",
+	"OnOK": "/Viajes/Actions/CRUD/Cancelar.action"
+}

@@ -1,0 +1,46 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage0",
+					"Visible": true,
+					"Image": "/Viajes/Images/fondoHB4.jpg",
+					"Alignment": "center",
+					"ContentMode": "ScaleAspectFit"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Inicio",
+	"Caption": "Inicio",
+	"PrefersLargeCaption": true,
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "Buscar Viaje",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Style": "",
+				"OnPress": "/Viajes/Actions/Detalle/NavToBuscarViaje.action"
+			}
+		]
+	}
+}

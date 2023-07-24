@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "CrearViaje"
+	},
+	"OnFailure": "/Viajes/Actions/CRUD/ErrorCrear.action",
+	"OnSuccess": "/Viajes/Actions/CRUD/ExitoCrear.action",
+	"ShowActivityIndicator": true,
+	"Target": {
+		"Service": "/Viajes/Services/VIAJES.service",
+		"EntitySet": "ViajeSet"
+	},
+	"Properties": {
+		"Salida": "#Page:CrearViaje/#Control:InpSalida/#Value",
+		"FechaSalida": "#Page:CrearViaje/#Control:DpFechaSalida/#Value",
+		"Destino": "#Page:CrearViaje/#Control:InpDestino/#Value",
+		"FechaEntrega": "#Page:CrearViaje/#Control:DpDestino/#Value"
+	}
+}

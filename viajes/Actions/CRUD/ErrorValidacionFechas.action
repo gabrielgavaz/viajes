@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorValidacionFechas"
+	},
+	"Message": "La fecha de llegada debe ser mayor a la de salida"
+}

@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.OfflineOData.Clear",
+	"ActionResult": {
+		"_Name": "LimpiarStorage"
+	},
+	"OnSuccess": "/Viajes/Actions/Offline/SubirCambios.action",
+	"ShowActivityIndicator": true,
+	"Service": "/Viajes/Services/VIAJES.service",
+	"Force": true
+}

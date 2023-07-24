@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"ActionResult": {
+		"_Name": "ErrorIniciarViaje"
+	},
+	"Message": "Ocurrió un error al iniciar el viaje: {#ActionResults:IniciarViaje/error}"
+}

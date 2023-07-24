@@ -1,0 +1,24 @@
+{
+	"_Type": "Action.Type.PopoverMenu",
+	"ActionResult": {
+		"_Name": "MenuViaje"
+	},
+	"PopoverItems": [
+		{
+			"Title": "Borrar Viaje",
+			"Icon": "sap-icon://delete",
+			"Style": "",
+			"OnPress": "/Viajes/Actions/CRUD/ConfirmarBorrar.action",
+			"Visible": true,
+			"Enabled": true
+		},
+		{
+			"Title": "Iniciar Viaje",
+			"Icon": "sap-icon://open-command-field",
+			"Style": "",
+			"OnPress": "/Viajes/Actions/CRUD/NavToIniciarViaje.action",
+			"Visible": true,
+			"Enabled": true
+		}
+	]
+}

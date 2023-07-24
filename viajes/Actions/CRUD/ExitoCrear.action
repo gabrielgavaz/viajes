@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ExitoCrear"
+	},
+	"Message": "Viaje creado exitosamente",
+	"Title": "Exito!",
+	"OKCaption": "OK",
+	"OnOK": "/Viajes/Actions/ClosePage.action"
+}

@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ConfirmarBorrar"
+	},
+	"Message": "Confirma la eliminación del viaje ?",
+	"Title": "Confirmar",
+	"OKCaption": "Si",
+	"OnOK": "/Viajes/Actions/CRUD/BorrarViaje.action",
+	"CancelCaption": "No"
+}

@@ -1,0 +1,12 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"ActionResult": {
+		"_Name": "ValidarIngresosCrearViaje"
+	},
+	"OnFailure": "/Viajes/Actions/CRUD/ErrorValidarIngresos.action",
+	"OnSuccess": "/Viajes/Rules/CRUD/ValidarFechas.js",
+	"RequiredFields": [
+		"InpSalida",
+		"InpDestino"
+	]
+}
